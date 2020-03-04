@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HelloWorld</string>
     <string name="mainActivityText1">Hello World!</string>
+    <string name="mainActivityText2">Goodbye World!</string>
 </resources>
