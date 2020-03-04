@@ -6,19 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            app:cardBackgroundColor="#fff59d">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:layout_margin="25dp"
+                android:text="@string/mainActivityText1"
+                android:textColor="#263238" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </FrameLayout>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton"
-        app:strokeColor="@color/colorAccent"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="247dp"
         android:text="@string/mainActivityText1"
         android:textColor="#000000"
-        app:rippleColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:rippleColor="@color/colorAccent"
+        app:strokeColor="@color/colorAccent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
