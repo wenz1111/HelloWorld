@@ -2,4 +2,8 @@
     <string name="app_name">HelloWorld</string>
     <string name="mainActivityText1">Hello World!</string>
     <string name="mainActivityText2">Goodbye World!</string>
+    <string name="mainActivityButton2Text">Display Fragment</string>
+
+    <string name="hello_fragment_1">Hello Title 1 Fragment</string>
+    <string name="hello_fragment_2">Hello Title 2 Fragment</string>
 </resources>
