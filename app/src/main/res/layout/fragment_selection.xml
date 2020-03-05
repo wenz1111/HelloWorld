@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".SelectionFragment">
+
+    <LinearLayout
+        android:id="@+id/fragmentSelLinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentSelTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fragmentSelTitle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/fragmentSelQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/fragmentSelQuestion" />
+
+        <LinearLayout
+            android:id="@+id/fragmentSelLinearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragmentLayoutBtn1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="2.5dp"
+                android:layout_weight="0.5"
+                android:text="@string/pixel_4xl"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fragmentLayoutBtn2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="2.5dp"
+                android:layout_weight="0.5"
+                android:text="@string/nexus_6p"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
