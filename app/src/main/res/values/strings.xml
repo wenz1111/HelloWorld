@@ -6,4 +6,17 @@
 
     <string name="hello_fragment_1">Hello Title 1 Fragment</string>
     <string name="hello_fragment_2">Hello Title 2 Fragment</string>
+
+    <!--    Second Activity-->
+    <string name="secondActivityTitle">Second Activity</string>
+
+    <!-- Fragment Selection -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragmentSelTitle">Welcome to the Android Store!</string>
+    <string name="fragmentSelQuestion">Which of the following below do you prefer?</string>
+    <string name="nexus_6p">Nexus 6P</string>
+    <string name="pixel_4xl">Pixel 4XL</string>
+    <string name="thirdActTitle">Welcome to the Third Activity!</string>
+    <string name="secondActBtn1">Third Activity</string>
+    <string name="thirdActivityTitle">Third Activity</string>
 </resources>
