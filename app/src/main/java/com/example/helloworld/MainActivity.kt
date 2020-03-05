@@ -1,5 +1,6 @@
 package com.example.helloworld
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         // Set OnClickListener
         materialButton.setOnClickListener(this)
         materialButtonFragment.setOnClickListener(this)
+        nextActivityBtn.setOnClickListener(this)
 
         // Display first Fragment Title initially
         val fragmentTransaction = fragmentManager.beginTransaction()
@@ -74,6 +76,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.materialButtonFragment -> {
                 displayFragment()
+            }
+            R.id.nextActivityBtn -> {
+                val intent = Intent(this, SecondActivity::class.java)
+                startActivity(intent)
             }
         }
     }
